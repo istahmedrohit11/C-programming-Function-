@@ -1,0 +1,16 @@
+#include<stdio.h>
+//function declaration
+void printHello();
+//function defination
+void printHello()
+{
+    printf("hello!\n");
+}
+//function call
+int main()
+{
+    printHello();
+    printHello();
+    return 0;
+}
+
