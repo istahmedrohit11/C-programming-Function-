@@ -1,0 +1,34 @@
+// Write a function that prints Namaste if user is Indian
+& Bonjour if the user is French.
+
+#include<stdio.h>
+void namaste();
+void bonjour();
+
+ void namaste()
+ {
+     printf("namaste\n");
+ }
+void bonjour()
+{
+    printf("bonjour\n");
+}
+
+int main()
+{
+    printf("enter f for France & i for Indian : ");
+    char ch;
+
+    scanf("%c",&ch);
+    if(ch=='i')
+    {
+        namaste();
+    }
+    else
+    {
+        bonjour();
+    }
+    return 0;
+
+}
+
