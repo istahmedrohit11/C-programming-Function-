@@ -1,0 +1,30 @@
+// fixed input
+#include<stdio.h>
+int sum(int a,int b);
+int sum(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int a=5,b=6;
+    printf("The sum of %d and %d is %d",a,b,sum(a,b));
+    return 0;
+}
+
+//input given by user
+#include<stdio.h>
+int sum(int a,int b);
+int sum(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int a,b;
+    printf("Enter first number : ");
+    scanf("%d",&a);
+    printf("Enter second number : ");
+    scanf("%d",&b);
+    printf("The sum of %d and %d is %d\n",a,b,sum(a,b));
+    return 0;
+}
+
