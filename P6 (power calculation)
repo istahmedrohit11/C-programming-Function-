@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+   float base,power;
+   printf("Enter base number: ");
+   scanf("%f",&base);
+   printf("Enter power number: ");
+   scanf("%f",&power);
+   printf("the power is: %.2f\n",pow(base,power));
+}
