@@ -1,0 +1,15 @@
+#include <stdio.h>
+void calculation(float value, float vat);
+void calculation(float value, float vat) {
+    value = value + (vat / 100 * value);
+    printf("Final price is: %.2f\n", value);
+}
+int main() {
+    float value, vat;
+    printf("Enter the value: ");
+    scanf("%f", &value);
+    printf("Enter the VAT percentage: ");
+    scanf("%f", &vat);
+    calculation(value, vat);
+    return 0;
+}
