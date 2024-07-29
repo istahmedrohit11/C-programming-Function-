@@ -1,0 +1,26 @@
+#include<stdio.h>
+float squareArea(float a);
+float squareArea(float a){
+    return a*a;
+}
+float rectangleArea(float a,float b);
+float rectangleArea(float a,float b){
+    return a*b;
+}
+float circleArea(float a);
+float circleArea(float a){
+    return a*a*3.14;
+}
+int main(){
+    float a,b;
+    printf("Enter first number : ");
+    scanf("%f",&a);
+    printf("Enter second number : ");
+    scanf("%f",&b);
+    // float a=5.50,b=7.50;
+
+    printf("The area of a square is :%.2f\n", squareArea(a));
+    printf("The area of a rectangle is:%.2f\n", rectangleArea(a,b));
+    printf("The area of a circle is:%.2f\n", circleArea(a));
+    return 0;
+}
