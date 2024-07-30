@@ -1,0 +1,19 @@
+#include<stdio.h>
+ float C2F(float c);
+ float C2F(float c){
+    return((9*c)/5+32);
+ }
+float F2C(float f);
+float F2C(float f){
+   return ((f-32)*(5.0/9.0));
+}
+int main(){
+    float c ,f;
+    printf("Enter Celsius: ");
+    scanf("%f",&c);
+    printf("celsius to Fahrenheit for %.2f is %.2f \n",c,C2F(c));
+    printf("Enter Ferhrenheit: ");
+    scanf("%f",&f);
+    //printf("celsius to Fahrenheit for %.2f is %.2f \n",c,C2F(c));
+    printf("Fahrenheit to Celsius for %.2f is %.2f \n",f,F2C(f));
+}
