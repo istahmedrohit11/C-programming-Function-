@@ -1,0 +1,30 @@
+#include <stdio.h>
+int isPrime(int num) {
+    if (num <= 1) {
+        return 0;
+    }
+    for (int i = 2; i <= num / 2; i++) {
+        if (num % i == 0) {
+            return 0; 
+        }
+    }
+    return 1;
+}
+void prime_range(int lower,int upper){
+    printf("Prime numbers between %d and %d are: ", lower, upper);
+    for (int i=lower;i<=upper;i++){
+        if(isPrime(i)){
+            printf("%d ",i);
+        }
+    }
+    printf("\n");
+}
+int main() {
+    int upper,lower;
+    printf("Input lower limit: ");
+    scanf("%d",&lower);
+    printf("Input upper limit: ");
+    scanf("%d",&upper);
+     prime_range(lower,upper);
+    return 0;
+}
